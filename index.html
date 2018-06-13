@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Buy My Bike</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+        <meta property="og:site_name" content="Buy My Bike">
+        <meta property="og:title" content="Buy My Bike">
+        <meta property="og:description" content="Buy my (second hand) bike">
+        <meta property="og:type" content="website" />
+        
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link rel="stylesheet" href="material-components-web.min.css" />
+        <!-- <script defer src="material-components-web.min.js"></script> -->
+
+        <style>
+            :root {
+                --mdc-theme-primary:#0294ee;
+                --mdc-theme-secondary:#ee5c02;
+                --mdc-theme-background:#EEEEEE;
+                --mdc-theme-surface:#FAFAFA;
+                --mdc-theme-on-primary:#212121;
+                --mdc-theme-on-secondary:#212121;
+                --mdc-theme-on-surface:#212121;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: var(--mdc-theme-background);
+            }
+            header.mdc-top-app-bar {
+                background-color: var(--mdc-theme-surface);
+                color: var(--mdc-theme-on-surface);
+            }
+            img {
+                width: 100%;
+            }
+            .ribbon {
+                position: absolute;
+                z-index: -10;
+                width: 100%;
+                height: 40vh;
+                background-color: var(--mdc-theme-secondary);
+            }
+            .wrapper {
+                padding-top: 20vh; 
+            }
+            main {
+                background-color: var(--mdc-theme-surface);
+                padding: 2em;
+            }
+            @media (min-width: 480px) {
+                .flip-text {order: 2;}
+                .flip-img {order: 1;}
+
+            }
+        </style>
+    </head>
+    <body class="mdc-typography">
+        <header class="mdc-top-app-bar mdc-elevation--z8">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <span class="mdc-top-app-bar__title">Buy My Bike</span>
+                </section>
+            </div>
+        </header>
+
+        <div class="ribbon"></div>
+
+        <div class="wrapper mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+                <div class="spacer mdc-grid-layout__cell mdc-layout-grid__cell--span-2-desktop"></div>
+                <main class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-elevation--z4">
+
+                    <section class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                            <h1 class="mdc-typography--headline2">Used Bike For Sale</h1>
+                            <h2 class="mdc-typography--headline5">My bike needs a new home</h2>
+                        </div>
+                    </section>
+
+                    <section class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+                            <!-- wide image -->
+                            <img src="http://via.placeholder.com/900x450">
+                        </div>
+                    </section>
+                    
+                    
+                    <section class="content mdc-layout-grid__inner">
+                        <div class="flip-text mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--align-middle">
+                            <h3 class="mdc-typography--headline4">About</h3>
+                            <ul>
+                                <li><strong>Age: </strong>3 years</li>
+                                <li><strong>Color: </strong>Silver/Gray</li>
+                                <li><strong>Gears: </strong>1</li>
+                                <li><strong>Manufacturer: </strong>191</li>
+                            </ul>
+                        </div>
+                        <div class="flip-img mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                            <img src="http://via.placeholder.com/300x300">
+                        </div>
+                    </section>
+
+                    <section class="content mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--align-middle">
+                            <h3 class="mdc-typography--headline4">Extras</h3>
+                            <ul>
+                                <li><strong>Second Seat: </strong>Comfy, rarely used</li>
+                                <li><strong>Lock: </strong>Combination</li>
+                                <li><strong>Rag: </strong>Because if you're anything like me, you don't like wet seats</li>
+                            </ul>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                            <img src="http://via.placeholder.com/300x300">
+                        </div>
+                    </section>
+
+                    <section class="content mdc-layout-grid__inner">
+                        <div class="flip-text mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--align-middle">
+                            <h3 class="mdc-typography--headline4">Known Issues</h3>
+                            <ul>
+                                <li><strong>Left (front) brake: </strong>Needs adjustment</li>
+                                <li><strong>Second seat: </strong>Small tear</li>
+                            </ul>
+                        </div>
+                        <div class="flip-img mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                            <img src="http://via.placeholder.com/300x300">
+                        </div>
+                    </section>
+                    
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
