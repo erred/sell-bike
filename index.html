@@ -38,9 +38,6 @@
                 background-color: var(--mdc-theme-surface);
                 color: var(--mdc-theme-on-surface);
             }
-            img {
-                width: 100%;
-            }
             .ribbon {
                 position: absolute;
                 z-index: -10;
@@ -60,6 +57,26 @@
                 .flip-img {order: 1;}
 
             }
+
+            #fullBikeBox {
+                /* background: center / contain no-repeat url("./full_bike.png"); */
+                background: center / contain no-repeat url("./bike.png");
+                height: 300px;
+            }
+            #wheelBox {
+                height: 300px;
+                background: center / contain no-repeat url("./wheel.png")
+            }
+            #seatBox {
+                height: 300px;
+                background: center / contain no-repeat url("./seat.png")
+            }
+
+            #pedalBox {
+                height: 300px;
+                background: center / contain no-repeat url("./pedal.png")
+            }
+
         </style>
     </head>
     <body class="mdc-typography">
@@ -82,13 +99,12 @@
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
                             <h1 class="mdc-typography--headline2">Used Bike For Sale</h1>
                             <h2 class="mdc-typography--headline5">My bike needs a new home</h2>
+                            <p><em>Yes I know I "forgot" to draw the brake lines, the rear reflector, and the bike chain but I promise my bike has them</em></p>
                         </div>
                     </section>
 
                     <section class="mdc-layout-grid__inner">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-                            <!-- wide image -->
-                            <img src="http://via.placeholder.com/900x450">
+                        <div id="fullBikeBox" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
                         </div>
                     </section>
                     
@@ -103,8 +119,8 @@
                                 <li><strong>Manufacturer: </strong>191</li>
                             </ul>
                         </div>
-                        <div class="flip-img mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-                            <img src="http://via.placeholder.com/300x300">
+                        <div id="wheelBox" class="flip-img mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                            <!-- <img src="./wheel.png"> -->
                         </div>
                     </section>
 
@@ -117,8 +133,8 @@
                                 <li><strong>Rag: </strong>Because if you're anything like me, you don't like wet seats</li>
                             </ul>
                         </div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-                            <img src="http://via.placeholder.com/300x300">
+                        <div id="seatBox" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                            <!-- <img src="./front_seat.png"> -->
                         </div>
                     </section>
 
@@ -127,11 +143,12 @@
                             <h3 class="mdc-typography--headline4">Known Issues</h3>
                             <ul>
                                 <li><strong>Left (front) brake: </strong>Needs adjustment</li>
-                                <li><strong>Second seat: </strong>Small tear</li>
+                                <li><strong>Second seat: </strong>Small tears (3)</li>
+                                <li><strong>Rear reflector: </strong> Bent</li>
                             </ul>
                         </div>
-                        <div class="flip-img mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
-                            <img src="http://via.placeholder.com/300x300">
+                        <div id="pedalBox" class="flip-img mdc-layout-grid__cell mdc-layout-grid__cell--span-4">
+                            <!-- <img src="http://via.placeholder.com/300x300"> -->
                         </div>
                     </section>
                     
